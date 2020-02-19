@@ -66,7 +66,7 @@ git clone https://github.com/kamilmatejuk/meal-planner.git
 ```sh
   NODE_ENV:      production
   db:            database_connection_string
-  jwtPrivateKey: mySecureKey
+  jwtPrivateKey: cinema_jwtPrivateKey
 ```
 4. Configure frontend from the `frontend` folder
 ```sh
