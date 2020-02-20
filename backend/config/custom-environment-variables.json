@@ -1,4 +1,4 @@
 {
-    "jwtPrivateKey": "cinema_jwtPrivateKey",
-	"db": "cinema_db"
+    "jwtPrivateKey": "mealplanner_jwtPrivateKey",
+	"db": "meal_planner_db"
 }

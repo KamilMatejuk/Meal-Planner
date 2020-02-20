@@ -75,7 +75,6 @@ git clone https://github.com/kamilmatejuk/meal-planner.git
 ```
 5. Try it yourself and have fun. -->
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 The app is quite simple to use. After reaching the website _[https://google.com/](https://google.com/)_ what you'll see is the view presented as in the screenshot below.

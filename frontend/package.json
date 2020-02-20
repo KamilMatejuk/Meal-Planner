@@ -18,7 +18,7 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "node server.js", 
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -26,7 +26,7 @@
   },
   "engines": {
     "node": "10.17.0"
-},
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -52,6 +52,8 @@
     "file-loader": "^5.0.2",
     "mini-css-extract-plugin": "^0.8.0",
     "style-loader": "^1.1.2",
-    "url-loader": "^3.0.0"
+    "url-loader": "^3.0.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }

@@ -8,27 +8,28 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import './Repertoire.css'
-// components
-import MovieList from './MovieList';
-import LoginRegisterView from './LoginRegisterView';
-import About from './About';
-import Repertoire from './Repertoire';
-import Home from './Home';
+// import './Repertoire.css'
+// // components
+// import MovieList from './MovieList';
+// import LoginRegisterView from './LoginRegisterView';
+// import About from './About';
+// import Repertoire from './Repertoire';
+// import Home from './Home';
+// import Profile from "./Profile";
+// import ShowContainer from "./ShowContainer";
 // images
-import cinemaImg from '../img/logo_burned.png';
-import slide1 from '../img/slide1.jpg'
-import slide2 from '../img/slide2.jpg';
-import slide3 from '../img/slide3.jpg';
-import Profile from "./Profile";
-import ShowContainer from "./ShowContainer";
+// import cinemaImg from '../img/logo_burned.png';
+// import slide1 from '../img/slide1.jpg'
+// import slide2 from '../img/slide2.jpg';
+// import slide3 from '../img/slide3.jpg';
 
 
 
 class App extends React.Component {
     constructor() {
         super();
-        this.state = {slide1: slide1, text1: 'Kraina Lodu 2', slide2: slide2, text2: 'Joker', slide3: slide3, text3: 'Gwiezdne Wojny: Skywalker. Odrodzenie'};
+        // this.state = {slide2: slide2, text2: 'Joker', slide3: slide3, text3: 'Gwiezdne Wojny: Skywalker. Odrodzenie'};
+        this.state = {};
     }
     
     render() {
@@ -40,12 +41,13 @@ class App extends React.Component {
                             <li className="nav-item">
                                 <Link to="/" className="nav-link navbar-brand">
                                     <div className="logo">
-                                        <img src={cinemaImg} alt=""/>
+                                        {/* <img src={cinemaImg} alt=""/> */}
+                                        <img src="" alt=""/>
                                         Kino "Kino"
                                     </div>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link to="/repertoire" className="nav-link">Repertuar</Link>
                             </li>
                             <li className="nav-item">
@@ -56,7 +58,7 @@ class App extends React.Component {
                             </li>
                             <li className="nav-item">
                                 <Link to="/about" className="nav-link">O nas</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                     <nav className="navbar fixed-bottom navbar-expand-sm navbar-dark justify-content-center">
@@ -67,7 +69,7 @@ class App extends React.Component {
                     {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
                     <Switch>
-                        <Route exact path="/">
+                        {/* <Route exact path="/">
                             <Home img1={this.state.slide1} img2={this.state.slide2} 
                                 img3={this.state.slide3} txt1={this.state.text1} txt2={this.state.text2}
                                 txt3={this.state.text3} />
@@ -86,7 +88,7 @@ class App extends React.Component {
                         </Route>
                         <Route path="/login">
                             <LoginRegisterView />
-                        </Route>
+                        </Route> */}
                     </Switch>
             </Router>
         );
