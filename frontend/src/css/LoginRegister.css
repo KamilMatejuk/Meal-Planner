@@ -1,0 +1,90 @@
+:root {
+    --panel-width: 400px; 
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+.login-register-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #3a3a3a, #e2e2e2, #3a3a3a);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-login {
+    flex-direction: row;
+}
+.container-register {
+    flex-direction: row-reverse;
+}
+.login-register-bg > * {
+    width: var(--panel-width);
+    margin: 50px;
+}
+.infoPanel > p {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+.formPanel {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+.formPanel p {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.formPanel a {
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    border: solid 1px black ;
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.formPanel a:visited,
+.formPanel a:active {
+    color: black;
+    text-decoration: none;
+}
+.formPanel a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.field {
+    width: calc(0.9 * var(--panel-width));
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=text], 
+input[type=password] {
+    background: #f1f1f1;
+    padding: 15px;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.btn {
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+}
+.btn:hover {
+    opacity: 1;
+}
