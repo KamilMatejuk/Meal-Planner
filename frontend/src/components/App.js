@@ -1,7 +1,7 @@
 // packages
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-// import { Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 // css
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,6 +13,9 @@ import RegisterView from './RegisterView';
 import MainView from './MainView';
 
 class App extends React.Component {
+
+    //TODO sprawdzić czy jest zalogowany i przekierować na główną lub login
+
     render() {
         return (
             <Router>
@@ -47,24 +50,8 @@ class App extends React.Component {
     }
 }
 
-// const isLoggedIn = () => {
-//   return localStorage.getItem("token");
-// };
-
-// const PrivateRoute = ({component: Component, ...rest}) => (
-//   <Route
-//     {...rest}
-//     render={props =>
-//       isLoggedIn() ? (
-//         <Component {...props} />
-//       ) : (
-//         <Redirect
-//           to="/login
-//             "
-//         />
-//       )
-//     }
-//   />
-// );
+// const PrivateRoute = ({ component: Component, ...rest}) =>( <Route {...rest} render={(props)=> (
+//     localStorage.getItem("token") ? <Component {...props}/>: <Redirect to='/login'/> )}/>
+// )
 
 export default App;
