@@ -31,6 +31,5 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreat
     .then(() => console.log('connected'))
     .catch(err => console.error('could not connect', err));
 
-// changed from 3000 to 3020 as port 3000 was used by React App.js
-const port = process.env.PORT || 3020;
+const port = process.env.PORT || 3333;
 app.listen(port, () => console.log(`listening on port ${port}...`));
