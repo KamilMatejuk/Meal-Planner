@@ -1,7 +1,8 @@
 # Meal Planner
 Project to simplify crating of meals schedule for families.
 
-Note: project is just started, not working at all, and containing parts of previous code. Left on github only to get back to it when I will have time.
+# Note: 
+Project is just started, not working at all, and containing parts of previous code. Left on github only to get back to it when I will have time.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
